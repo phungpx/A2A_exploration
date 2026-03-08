@@ -1,0 +1,38 @@
+{
+    "name": "Image Generation Agent",
+    "description": "Generates images based on text prompts.",
+    "url": "https://api.example-image-agent.com/a2a",
+    "version": "1.0.0",
+    "capabilities": {
+        "streaming": true,
+        "pushNotifications": false,
+        "stateTransitionHistory": true
+    },
+    "authentication": {
+        "schemes": [
+            "apiKey"
+        ]
+    },
+    "defaultInputModes": [
+        "text"
+    ],
+    "defaultOutputModes": [
+        "image/png"
+    ],
+    "skills": [
+        {
+            "id": "generate_image",
+            "name": "Generate Image",
+            "description": "Creates an image from a textual description.",
+            "inputModes": [
+                "text"
+            ],
+            "outputModes": [
+                "image/png"
+            ],
+            "examples": [
+                "Generate an image of a ‘blue cat wearing a top hat’"
+            ]
+        }
+    ]
+}
